@@ -37,7 +37,3 @@ Un hôtel a sollicité votre expertise pour la mise en place d'un nouveau systè
 
 *NB : Pour cet exercice, toutes les fonctionnalités d'ajout, de mise à jour et de suppression n'effectuent aucune action sur les données mais renvoient uniquement un message pour signifier que l'action a bien été exécutée.*
 ---
-
-*Remarque : N'oubliez pas de remplacer `{clientId}` et `{roomId}` par les ID réels des clients et des chambres lors de l'utilisation des endpoints.*
-
-Ces instructions visent à guider l'utilisation de la première version du système de réservation de l'hôtel. Les fonctionnalités actuelles ne modifient pas réellement les données, mais fournissent des messages confirmant que l'action a été exécutée avec succès.
