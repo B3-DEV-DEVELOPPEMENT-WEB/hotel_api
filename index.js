@@ -5,7 +5,7 @@ import {router as clientsRoutes} from "./routes/clients.routes.js"
 const app = express();
 const port = 3000;
 
-app.use("/hotels", hotelsRoutes);
+app.use("/hotel", hotelsRoutes);
 app.use("/clients", clientsRoutes);
 
 app.listen(port, () => {

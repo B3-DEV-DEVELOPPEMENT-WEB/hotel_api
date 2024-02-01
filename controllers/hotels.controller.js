@@ -1,11 +1,16 @@
 import {hotelsService} from "../services/hotels.service.js";
 
-export function FindHotels (req, res) {
-    const hotels = hotelsService.getAllHotels();
-    res.send(hotels)
+export function FindHotel (req, res) {
+    const hotel = hotelsService.getHotel();
+    res.send(hotel)
 }
 
-export function FindHotelById (req, res) {
-    const hotel = hotelsService.getHotel(req.params.id);
-    res.send(hotel);
+export function FindRooms (req, res) {
+    const rooms = hotelsService.getRooms();
+    res.send(rooms)
+}
+
+export function FindRoom (req, res) {
+    const room = hotelsService.getRoom(req.params.id);
+    res.send(room);
 }
