@@ -17,8 +17,6 @@ Un hôtel a sollicité votre expertise pour la mise en place d'un nouveau systè
 - L'hôtel peut réserver une chambre pour un client.
 - L'hôtel peut annuler la réservation d'un client.
 
-*NB : Pour cet exercice, toutes les fonctionnalités d'ajout, de mise à jour et de suppression n'effectuent aucune action sur les données mais renvoient uniquement un message pour signifier que l'action a bien été exécutée.*
-
 ### 2. Fonctionnalités pour les Clients (Routes Utilisateur)
 
 #### 2.1. Accès aux Informations
