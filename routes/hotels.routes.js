@@ -1,5 +1,5 @@
 import express from "express";
-import {FindHotel, FindRooms, FindRoom} from "../controllers/hotels.controller.js";
+import {FindHotel, FindRooms, FindRoom, createReservation} from "../controllers/hotels.controller.js";
 
 export const router = express.Router();
 
@@ -13,6 +13,10 @@ router.get("/rooms", (req, res) => {
 
 router.get("/:id", (req, res) => {
     FindRoom(req, res);
+});
+
+router.post("/:id", (req, res) => {
+    createReservation(req, res);
 });
 
 // PUT

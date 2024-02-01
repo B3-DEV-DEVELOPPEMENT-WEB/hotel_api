@@ -14,3 +14,8 @@ export function FindRoom (req, res) {
     const room = hotelsService.getRoom(req.params.id);
     res.send(room);
 }
+
+export function createReservation (req, res) {
+    const reservation = hotelsService.postReservation(req.params.id);
+    res.send(reservation);
+}
