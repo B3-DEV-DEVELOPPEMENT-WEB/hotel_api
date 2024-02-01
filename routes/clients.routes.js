@@ -1,5 +1,5 @@
 import express from "express";
-import {FindClientById, FindClients} from "../controllers/clients.controller.js";
+import {FindClient, FindClients, UpdateClient, RemoveClient} from "../controllers/clients.controller.js";
 
 export const router = express.Router();
 
@@ -8,7 +8,15 @@ router.get("", (req, res) => {
 });
 
 router.get("/:id", (req, res) => {
-    FindClientById(req, res);
+    FindClient(req, res);
+});
+
+router.put("/:id", (req, res) => {
+    UpdateClient(req, res);
+});
+
+router.delete("/:id", (req, res) => {
+    RemoveClient(req, res);
 });
 
 // PUT

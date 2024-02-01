@@ -1,5 +1,5 @@
 import express from "express";
-import {router as hotelsRoutes} from "./routes/hotels.routes.js"
+import {router as hotelsRoutes} from "./routes/hotel.routes.js"
 import {router as clientsRoutes} from "./routes/clients.routes.js"
 
 const app = express();

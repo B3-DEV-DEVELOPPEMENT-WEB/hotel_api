@@ -1,19 +1,21 @@
+import jsonData from '../json/clients.json' assert { type: 'json' };
+
 class ClientsService {
-    getAllClients() {
-        const clients = [
-            "Thibaut",
-            "Baptiste",
-            "Hugo"
-        ]
-        return clients;
+
+    getClients() {
+        return jsonData;
     }
 
     getClient(id) {
-        const client = {
-            "id": id,
-            "name": "pierpoljak"
-        }
-        return client;
+        return jsonData.clients.find(client => client.id === parseInt(id));
+    }
+
+    putClient(id) {
+        return "Le client " + parseInt(id) +" a bien était ajouter.";
+    }
+
+    deleteClient(id) {
+        return "Le client " + parseInt(id) +" a bien était supprimé.";
     }
 }
 export const clientsService = new ClientsService();
