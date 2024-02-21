@@ -6,7 +6,7 @@ class HotelService {
     }
 
     getRooms() {
-        return jsonData;
+        return jsonData.rooms;
     }
 
     getRoom(id) {
